@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-material-darkmode": {
+    "app-shop": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-material-darkmode:build:production"
+              "buildTarget": "app-shop:build:production"
             },
             "development": {
-              "buildTarget": "angular-material-darkmode:build:development"
+              "buildTarget": "app-shop:build:development"
             }
           },
           "defaultConfiguration": "development"
