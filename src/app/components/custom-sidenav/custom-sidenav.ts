@@ -31,7 +31,7 @@ export class CustomSidenav {
       label: 'Apps',
       route: '/',
     },
-        {
+    {
       icon: 'info',
       label: 'Info',
       route: '/info',
