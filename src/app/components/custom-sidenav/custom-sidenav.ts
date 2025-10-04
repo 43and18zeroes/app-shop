@@ -28,8 +28,8 @@ export class CustomSidenav {
   menuItems = signal<MenuItem[]>([
     {
       icon: 'home',
-      label: 'Start',
-      route: '/start',
+      label: 'Apps',
+      route: '/',
     },
         {
       icon: 'info',

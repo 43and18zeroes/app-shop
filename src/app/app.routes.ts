@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { Start } from './pages/start/start';
+import { Apps } from './pages/apps/apps';
 import { Info } from './pages/info/info';
 
 export const routes: Routes = [
@@ -9,8 +9,8 @@ export const routes: Routes = [
     redirectTo: 'start',
   },
   {
-    path: 'start',
-    loadComponent: () => import('./pages/start/start').then((m) => m.Start),
+    path: '',
+    loadComponent: () => import('./pages/apps/apps').then((m) => m.Apps),
   },
   {
     path: 'info',
