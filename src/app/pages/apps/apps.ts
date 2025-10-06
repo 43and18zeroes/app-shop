@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
+import 'swiper/swiper-bundle.css';
 
 @Component({
   selector: 'app-apps',
@@ -10,6 +11,22 @@ import { Navigation, Pagination } from 'swiper/modules';
   styleUrl: './apps.scss',
 })
 export class Apps {
+
+  section = [
+  {
+    thumbnailUrl: 'https://example.com/path/to/image1.jpg',
+    altText: 'Thumbnail 1'
+  },
+  {
+    thumbnailUrl: 'https://example.com/path/to/image2.jpg',
+    altText: 'Thumbnail 2'
+  },
+  {
+    thumbnailUrl: 'https://example.com/path/to/image3.jpg',
+    altText: 'Thumbnail 3'
+  },
+  // Weitere Thumbnails können hier hinzugefügt werden
+];
   
   @ViewChild('swiperContainer') swiperContainer!: ElementRef;
   swiperInstance: Swiper | null = null;

@@ -2,7 +2,7 @@
 
 <div class="swiper" #swiperContainer>
   <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let thumbnailData of section.thumbnails">
+    <div class="swiper-slide" *ngFor="let thumbnailData of section">
       <img
         [src]="thumbnailData.thumbnailUrl"
         [alt]="thumbnailData.altText || 'Video Thumbnail'"
