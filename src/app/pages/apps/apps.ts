@@ -14,16 +14,36 @@ export class Apps {
 
   section = [
   {
-    thumbnailUrl: 'https://example.com/path/to/image1.jpg',
+    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
     altText: 'Thumbnail 1'
   },
   {
-    thumbnailUrl: 'https://example.com/path/to/image2.jpg',
+    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
     altText: 'Thumbnail 2'
   },
   {
-    thumbnailUrl: 'https://example.com/path/to/image3.jpg',
+    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
     altText: 'Thumbnail 3'
+  },
+  {
+    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    altText: 'Thumbnail 4'
+  },
+  {
+    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    altText: 'Thumbnail 5'
+  },
+  {
+    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    altText: 'Thumbnail 6'
+  },
+  {
+    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    altText: 'Thumbnail 7'
+  },
+  {
+    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    altText: 'Thumbnail 8'
   },
   // Weitere Thumbnails können hier hinzugefügt werden
 ];
