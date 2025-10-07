@@ -14,35 +14,35 @@ export class Apps {
 
   section = [
   {
-    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-cam.webp',
     altText: 'Thumbnail 1'
   },
   {
-    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-chat.webp',
     altText: 'Thumbnail 2'
   },
   {
-    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-maps.webp',
     altText: 'Thumbnail 3'
   },
   {
-    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-music.webp',
     altText: 'Thumbnail 4'
   },
   {
-    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-music-heart.webp',
     altText: 'Thumbnail 5'
   },
   {
-    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-pad.webp',
     altText: 'Thumbnail 6'
   },
   {
-    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-settings.webp',
     altText: 'Thumbnail 7'
   },
   {
-    thumbnailUrl: 'thumbnails/rnd-logo-a.webp',
+    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-weather.webp',
     altText: 'Thumbnail 8'
   },
   // Weitere Thumbnails können hier hinzugefügt werden
