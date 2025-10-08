@@ -13,7 +13,7 @@ import 'swiper/swiper-bundle.css';
 export class Apps {
   section = [
     {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-cam.webp',
+      thumbnailUrl: 'img/thumbnails/thumbnail-card-grid-app.webp',
       altText: 'Thumbnail 1',
     },
     {
