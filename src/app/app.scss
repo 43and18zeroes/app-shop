@@ -4,6 +4,12 @@ mat-toolbar {
   @include custom-mixins.mat-theme-transition();
   display: flex;
   justify-content: space-between;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px
+    color-mix(in srgb, light-dark(#dae2f9, #4b5364) 55%, transparent);
+  position: relative;
+  z-index: 1000;
 }
 
 mat-sidenav-container {
