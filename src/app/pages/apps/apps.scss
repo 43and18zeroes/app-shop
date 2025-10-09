@@ -1,11 +1,44 @@
 .swiper {
-    .swiper-wrapper {
-        .swiper-slide {
-            img {
-                max-width: 100%;
-                border-radius: 20%;
-                box-shadow: 0 1px 2px 0 rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
-            }
-        }
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+  overflow: hidden;
+
+  -webkit-user-select: none; /* Safari, Chrome, Opera, Edge */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge (ältere Versionen) */
+  user-select: none; /* Standard-Syntax */
+
+  .swiper-wrapper {
+    overflow: visible;
+
+    .swiper-slide {
+      img {
+        display: block;
+        max-width: 100%;
+        border-radius: 20%;
+        box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+          0 1px 3px 1px rgba(60, 64, 67, 0.15);
+      }
     }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 76px;
+    height: 100%;
+    // height: calc(100% - 20px);
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --swiper-navigation-color: white;
+    --swiper-navigation-size: $nav-icon-size;
+    text-shadow: none;
+    transition: background-color 0.3s ease;
+  }
 }
