@@ -5,9 +5,24 @@ mat-toolbar {
   display: flex;
   justify-content: space-between;
 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 6px 18px
-    color-mix(in srgb, light-dark(#dae2f9, #4b5364) 55%, transparent);
+  box-shadow: 0 1px 2px
+      color-mix(
+        in srgb,
+        light-dark(#000, #fff) 10%,
+        light-dark(#faf9fd, #121316)
+      ),
+    0 6px 12px
+      color-mix(
+        in srgb,
+        light-dark(#000, #fff) 10%,
+        light-dark(#faf9fd, #121316)
+      ),
+    0 16px 32px
+      color-mix(
+        in srgb,
+        light-dark(#000, #fff) 6%,
+        light-dark(#faf9fd, #121316)
+      );
   position: relative;
   z-index: 1000;
 }
