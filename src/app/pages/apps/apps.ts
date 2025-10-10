@@ -86,10 +86,11 @@ export class Apps {
       this.swiperInstance = new Swiper(this.swiperContainer.nativeElement, {
         modules: [Navigation],
         slidesPerView: 8,
-        slidesPerGroup: 4,
+        slidesPerGroup: 8,
         spaceBetween: 28,
         loop: false,
         pagination: false,
+        speed: 500,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -112,7 +113,7 @@ export class Apps {
           },
           1200: {
             slidesPerView: 8,
-            slidesPerGroup: 4,
+            slidesPerGroup: 8,
             spaceBetween: 28,
           },
         },
