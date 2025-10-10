@@ -1,6 +1,6 @@
 .swiper {
-//   padding-top: 10px;
-//   padding-bottom: 10px;
+  //   padding-top: 10px;
+  //   padding-bottom: 10px;
   overflow: hidden;
 
   -webkit-user-select: none; /* Safari, Chrome, Opera, Edge */
@@ -24,21 +24,47 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    width: 76px;
-    height: 100%;
-    // height: calc(100% - 20px);
+    /* Positionierung */
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 10;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.15);
-    color: white;
+
+    /* Box-Modell */
+    width: 24px;
+    height: 24px;
+    padding: 16px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+      0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    border-radius: 50%;
+
+    /* Layout */
     display: flex;
     align-items: center;
     justify-content: center;
-    --swiper-navigation-color: white;
-    --swiper-navigation-size: $nav-icon-size;
-    text-shadow: none;
+
+    /* Visuelles */
+    background-color: #faf9fd;
+
+    /* Typo/Icon (Swiper-Variablen) */
+    --swiper-navigation-color: #5f6368;
+    --swiper-navigation-size: 1px; /* Icon-Größe */
+
+    /* Interaktion */
+    cursor: pointer;
+
+    /* Effekte */
     transition: background-color 0.3s ease;
+
+    /* Sonstiges */
+    text-shadow: none;
+  }
+
+  .swiper-button-prev {
+    left: 0 !important;
+  }
+
+  .swiper-button-next {
+    right: 0 !important;
   }
 }

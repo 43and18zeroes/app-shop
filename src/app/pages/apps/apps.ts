@@ -4,6 +4,8 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
+const navIconSize = '10px';
+
 @Component({
   selector: 'app-apps',
   imports: [CommonModule],
@@ -11,6 +13,7 @@ import 'swiper/swiper-bundle.css';
   styleUrl: './apps.scss',
 })
 export class Apps {
+
   section = [
     {
       thumbnailUrl: 'img/thumbnails/thumbnail-card-grid-app.webp',
