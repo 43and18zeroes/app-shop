@@ -14,6 +14,11 @@
   padding-left: 12px;
   margin-left: -12px;
 
+  padding-bottom: 12px;
+  margin-bottom: -12px;
+  padding-top: 12px;
+  margin-top: -12px;
+
   .swiper-wrapper {
     overflow: visible;
     padding: 1px;
@@ -24,9 +29,19 @@
         display: block;
         max-width: 99%;
         border-radius: 20%;
-        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12),
-          /* crisp 1px Outline (außerhalb) */ inset 0 1px 0
-            rgba(255, 255, 255, 0.25); /* leichte innere Kante für Tiefe */
+        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+          /* umbra   */ 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+          /* penumbra*/ 0 1px 18px 0 rgba(0, 0, 0, 0.12); /* ambient */
+        transition: box-shadow 180ms ease, transform 180ms ease;
+        will-change: box-shadow, transform;
+
+        &:hover,
+        &:focus {
+          box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.2),
+            0 10px 16px 1px rgba(0, 0, 0, 0.14),
+            0 2px 26px 2px rgba(0, 0, 0, 0.12);
+          transform: translateY(-1px);
+        }
       }
     }
   }
