@@ -1,7 +1,4 @@
 .swiper {
-  //   padding-top: 10px;
-  //   padding-bottom: 10px;
-  // padding: 0px;
   overflow: hidden;
 
   -webkit-user-select: none; /* Safari, Chrome, Opera, Edge */
@@ -9,17 +6,8 @@
   -ms-user-select: none; /* Internet Explorer/Edge (ältere Versionen) */
   user-select: none; /* Standard-Syntax */
 
-  padding-right: 12px;
-  margin-right: -12px;
-  padding-left: 12px;
-  margin-left: -12px;
-
-  padding-bottom: 12px;
-  margin-bottom: -12px;
-  padding-top: 12px;
-  margin-top: -12px;
-
-  margin-bottom: 24px;
+  margin: 16px;
+  padding: 16px;
 
   .swiper-wrapper {
     overflow: visible;
@@ -36,6 +24,7 @@
           /* penumbra*/ 0 1px 18px 0 rgba(0, 0, 0, 0.12); /* ambient */
         transition: box-shadow 180ms ease, transform 180ms ease;
         will-change: box-shadow, transform;
+        cursor: pointer;
 
         &:hover,
         &:focus {
