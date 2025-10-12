@@ -1,12 +1,21 @@
 <h1>App Shop</h1>
 
-<div class="swiper" #swiperContainer>
+<!-- Erste Reihe -->
+<div class="swiper" #swiperContainer1>
   <div class="swiper-wrapper">
     <div class="swiper-slide" *ngFor="let thumbnailData of section">
-      <img
-        [src]="thumbnailData.thumbnailUrl"
-        [alt]="thumbnailData.altText || 'Video Thumbnail'"
-      />
+      <img [src]="thumbnailData.thumbnailUrl" [alt]="thumbnailData.altText || 'Video Thumbnail'" />
+    </div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+<!-- Zweite Reihe -->
+<div class="swiper" #swiperContainer2>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let thumbnailData of section">
+      <img [src]="thumbnailData.thumbnailUrl" [alt]="thumbnailData.altText || 'Video Thumbnail'" />
     </div>
   </div>
   <div class="swiper-button-prev"></div>
