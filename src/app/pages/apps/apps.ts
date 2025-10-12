@@ -6,8 +6,6 @@ import 'swiper/swiper-bundle.css';
 import { NavigationOptions, SwiperOptions } from 'swiper/types';
 import { SECTION, SectionItem } from './apps.data';
 
-const navIconSize = '10px';
-
 @Component({
   selector: 'app-apps',
   imports: [CommonModule],
