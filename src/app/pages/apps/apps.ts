@@ -4,6 +4,7 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import { NavigationOptions, SwiperOptions } from 'swiper/types';
+import { SECTION, SectionItem } from './apps.data';
 
 const navIconSize = '10px';
 
@@ -14,72 +15,8 @@ const navIconSize = '10px';
   styleUrl: './apps.scss',
 })
 export class Apps {
-  section = [
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-card-grid-app.webp',
-      altText: 'Thumbnail 1',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-chat.webp',
-      altText: 'Thumbnail 2',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-maps.webp',
-      altText: 'Thumbnail 3',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-music.webp',
-      altText: 'Thumbnail 4',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-music-heart.webp',
-      altText: 'Thumbnail 5',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-pad.webp',
-      altText: 'Thumbnail 6',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-settings.webp',
-      altText: 'Thumbnail 7',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-weather.webp',
-      altText: 'Thumbnail 8',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-cam.webp',
-      altText: 'Thumbnail 9',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-chat.webp',
-      altText: 'Thumbnail 10',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-maps.webp',
-      altText: 'Thumbnail 11',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-music.webp',
-      altText: 'Thumbnail 12',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-music-heart.webp',
-      altText: 'Thumbnail 13',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-pad.webp',
-      altText: 'Thumbnail 14',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-settings.webp',
-      altText: 'Thumbnail 15',
-    },
-    {
-      thumbnailUrl: 'img/thumbnails/thumbnail-rnd-weather.webp',
-      altText: 'Thumbnail 16',
-    },
-  ];
+
+  readonly section: SectionItem[] = SECTION;
 
   @ViewChild('swiperContainer1') swiperContainer1!: ElementRef<HTMLElement>;
   @ViewChild('swiperContainer2') swiperContainer2!: ElementRef<HTMLElement>;
