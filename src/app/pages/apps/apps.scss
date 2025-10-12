@@ -19,18 +19,39 @@
         display: block;
         max-width: 99%;
         border-radius: 20%;
-        box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
-          /* umbra   */ 0 6px 10px 0 rgba(0, 0, 0, 0.14),
-          /* penumbra*/ 0 1px 18px 0 rgba(0, 0, 0, 0.12); /* ambient */
+        box-shadow: 0 3px 5px -1px color-mix(in srgb, light-dark(#000, #fff) 10%, light-dark(#faf9fd, #121316)),
+          0 6px 10px 0
+            color-mix(
+              in srgb,
+              light-dark(#000, #fff) 10%,
+              light-dark(#faf9fd, #121316)
+            ),
+          0 1px 18px 0
+            color-mix(
+              in srgb,
+              light-dark(#000, #fff) 6%,
+              light-dark(#faf9fd, #121316)
+            );
         transition: box-shadow 180ms ease, transform 180ms ease;
         will-change: box-shadow, transform;
         cursor: pointer;
 
         &:hover,
         &:focus {
-          box-shadow: 0 6px 7px -0.7px rgba(0, 0, 0, 0.2),
-            0 10px 11.2px 0.7px rgba(0, 0, 0, 0.14),
-            0 2px 18.2px 1.4px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 6px 7px -0.7px color-mix(in srgb, light-dark(#000, #fff)
+                  10%, light-dark(#faf9fd, #121316)),
+            0 10px 11.2px 0.7px
+              color-mix(
+                in srgb,
+                light-dark(#000, #fff) 10%,
+                light-dark(#faf9fd, #121316)
+              ),
+            0 2px 18.2px 1.4px
+              color-mix(
+                in srgb,
+                light-dark(#000, #fff) 6%,
+                light-dark(#faf9fd, #121316)
+              );
           transform: translateY(-1px);
         }
       }
@@ -49,8 +70,18 @@
     width: 24px;
     height: 24px;
     padding: 16px;
-    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
-      0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    box-shadow: 0 1px 2px 0
+        color-mix(
+          in srgb,
+          light-dark(#000, #fff) 10%,
+          light-dark(#faf9fd, #121316)
+        ),
+      0 1px 3px 1px
+        color-mix(
+          in srgb,
+          light-dark(#000, #fff) 10%,
+          light-dark(#faf9fd, #121316)
+        );
     border-radius: 50%;
 
     /* Layout */
