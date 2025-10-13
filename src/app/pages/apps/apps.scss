@@ -113,13 +113,4 @@
   .swiper-button-next {
     right: 1px !important;
   }
-
-  @media (hover: none) {
-    > .swiper-button-prev,
-    > .swiper-button-next {
-      opacity: 1 !important;
-      visibility: visible !important;
-      pointer-events: auto !important;
-    }
-  }
 }
