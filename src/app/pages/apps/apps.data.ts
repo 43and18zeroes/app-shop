@@ -21,7 +21,7 @@ export const SECTION: SectionItem[] = [
     altText: 'Thumbnail 4',
   },
   {
-    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-music-heart.webp',
+    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-heart.webp',
     altText: 'Thumbnail 5',
   },
   {
@@ -53,7 +53,7 @@ export const SECTION: SectionItem[] = [
     altText: 'Thumbnail 12',
   },
   {
-    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-music-heart.webp',
+    thumbnailUrl: 'img/thumbnails/thumbnail-rnd-heart.webp',
     altText: 'Thumbnail 13',
   },
   {
