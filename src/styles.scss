@@ -1,34 +1,38 @@
 @use "@angular/material" as mat;
-@use 'swiper/swiper-bundle.css';
-
+@use "swiper/swiper-bundle.css";
 
 html {
   color-scheme: light dark;
-  @include mat.theme((
-    color: mat.$azure-palette,
-    typography: Roboto,
-    density: 0
-  ));
+  @include mat.theme(
+    (
+      color: mat.$azure-palette,
+      typography: Roboto,
+      density: 0,
+    )
+  );
 }
 
 .darkMode {
   color-scheme: dark;
-  @include mat.theme((
-    color: mat.$azure-palette,
-    typography: Roboto,
-    density: 0
-  ));
+  @include mat.theme(
+    (
+      color: mat.$azure-palette,
+      typography: Roboto,
+      density: 0,
+    )
+  );
 }
 
 .lightMode {
   color-scheme: light;
-  @include mat.theme((
-    color: mat.$azure-palette,
-    typography: Roboto,
-    density: 0
-  ));
+  @include mat.theme(
+    (
+      color: mat.$azure-palette,
+      typography: Roboto,
+      density: 0,
+    )
+  );
 }
-
 
 html,
 body {
@@ -43,6 +47,7 @@ h1 {
   margin-top: 4px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 500;
 }

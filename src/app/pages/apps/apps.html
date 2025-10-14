@@ -3,8 +3,14 @@
 <!-- Erste Reihe -->
 <div class="swiper" #swiperContainer1>
   <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let thumbnailData of section; trackBy: trackByUrl">
-      <img [src]="thumbnailData.thumbnailUrl" [alt]="thumbnailData.altText || 'Video Thumbnail'" />
+    <div
+      class="swiper-slide"
+      *ngFor="let thumbnailData of section; trackBy: trackByUrl"
+    >
+      <img
+        [src]="thumbnailData.thumbnailUrl"
+        [alt]="thumbnailData.altText || 'Video Thumbnail'"
+      />
     </div>
   </div>
   <div class="swiper-button-prev"></div>
@@ -14,8 +20,14 @@
 <!-- Zweite Reihe (reversed!) -->
 <div class="swiper" #swiperContainer2>
   <div class="swiper-wrapper">
-    <div class="swiper-slide" *ngFor="let thumbnailData of sectionReversed; trackBy: trackByUrl">
-      <img [src]="thumbnailData.thumbnailUrl" [alt]="thumbnailData.altText || 'Video Thumbnail'" />
+    <div
+      class="swiper-slide"
+      *ngFor="let thumbnailData of sectionReversed; trackBy: trackByUrl"
+    >
+      <img
+        [src]="thumbnailData.thumbnailUrl"
+        [alt]="thumbnailData.altText || 'Video Thumbnail'"
+      />
     </div>
   </div>
   <div class="swiper-button-prev"></div>
