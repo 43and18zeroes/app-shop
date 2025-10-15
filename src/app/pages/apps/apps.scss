@@ -18,9 +18,10 @@
     padding-right: 4px;
 
     .swiper-slide {
+
       img {
         display: block;
-        max-width: 99%;
+        max-width: 100%;
         border-radius: 20%;
         box-shadow: 0 3px 5px -1px color-mix(in srgb, light-dark(#000, #fff) 10%, light-dark(#faf9fd, #121316)),
           0 6px 10px 0
@@ -115,5 +116,12 @@
 
   .swiper-button-next {
     right: 5px !important;
+  }
+}
+
+@media (width <= 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
   }
 }
