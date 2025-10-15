@@ -6,8 +6,11 @@
   -ms-user-select: none; /* Internet Explorer/Edge (ältere Versionen) */
   user-select: none; /* Standard-Syntax */
 
-  margin: 16px;
+  // margin: 16px;
+  // padding: 16px;
+
   padding: 16px;
+  margin: -16px;
 
   .swiper-wrapper {
     overflow: visible;
@@ -107,17 +110,10 @@
   }
 
   .swiper-button-prev {
-    left: 1px !important;
+    left: 5px !important;
   }
 
   .swiper-button-next {
-    right: 1px !important;
-  }
-}
-
-@media (width < 992px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none !important;
+    right: 5px !important;
   }
 }
