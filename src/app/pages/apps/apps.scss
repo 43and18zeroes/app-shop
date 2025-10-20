@@ -11,8 +11,8 @@
 
   .swiper-wrapper {
     overflow: visible;
-    padding: 1px;
-    padding-right: 4px;
+    // padding: 1px;
+    // padding-right: 4px;
 
     .swiper-slide {
 
@@ -68,7 +68,6 @@
     z-index: 10;
 
     /* Box-Modell */
-    width: 24px;
     height: calc(100% - 64px);
     padding: 16px;
     box-shadow: 0 1px 2px 0
@@ -90,7 +89,7 @@
     justify-content: center;
 
     /* Visuelles */
-    background-color: #faf9fd;
+    background-color: rgba($color: #fff, $alpha: .2);
 
     /* Typo/Icon (Swiper-Variablen) */
     --swiper-navigation-color: #5f6368;
@@ -107,11 +106,13 @@
   }
 
   .swiper-button-prev {
-    left: 5px !important;
+    width: 28px;
+    left: 0px !important;
   }
 
   .swiper-button-next {
-    right: 5px !important;
+    width: 28px;
+    right: 0px !important;
   }
 }
 
