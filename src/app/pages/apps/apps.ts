@@ -38,7 +38,7 @@ export class Apps {
         loop: false,
         speed: 500,
         navigation: {
-          nextEl: next as HTMLElement, // <-- HTMLElement, nicht Element
+          nextEl: next as HTMLElement,
           prevEl: prev as HTMLElement,
         } as NavigationOptions,
         breakpoints: {
