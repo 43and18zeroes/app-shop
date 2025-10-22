@@ -4,15 +4,15 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import { NavigationOptions, SwiperOptions } from 'swiper/types';
-import { SECTION, SECTION_REVERSED, SectionItem } from './apps.data';
+import { SECTION, SECTION_REVERSED, SectionItem } from './applications.data';
 
 @Component({
-  selector: 'app-apps',
+  selector: 'app-applications',
   imports: [CommonModule],
-  templateUrl: './apps.html',
-  styleUrl: './apps.scss',
+  templateUrl: './applications.html',
+  styleUrl: './applications.scss',
 })
-export class Apps {
+export class Applications {
   readonly section: SectionItem[] = SECTION;
   readonly sectionReversed: SectionItem[] = SECTION_REVERSED;
 
