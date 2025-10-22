@@ -1,18 +1,16 @@
 .swiper {
   overflow: hidden;
 
-  -webkit-user-select: none; /* Safari, Chrome, Opera, Edge */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge (ältere Versionen) */
-  user-select: none; /* Standard-Syntax */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   padding: 16px 60px;
   margin: -16px;
 
   .swiper-wrapper {
     overflow: visible;
-    // padding: 1px;
-    // padding-right: 4px;
 
     .swiper-slide {
       img {
@@ -58,62 +56,6 @@
     }
   }
 
-  // .swiper-button-next,
-  // .swiper-button-prev {
-  //   /* Positionierung */
-  //   position: absolute;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   z-index: 10;
-
-  //   /* Box-Modell */
-  //   height: calc(100% - 64px);
-  //   padding: 16px;
-  //   box-shadow: 0 1px 2px 0
-  //       color-mix(
-  //         in srgb,
-  //         light-dark(#000, #fff) 10%,
-  //         light-dark(#faf9fd, #121316)
-  //       ),
-  //     0 1px 3px 1px
-  //       color-mix(
-  //         in srgb,
-  //         light-dark(#000, #fff) 10%,
-  //         light-dark(#faf9fd, #121316)
-  //       );
-
-  //   /* Layout */
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-
-  //   /* Visuelles */
-  //   background-color: rgba($color: #fff, $alpha: .2);
-
-  //   /* Typo/Icon (Swiper-Variablen) */
-  //   --swiper-navigation-color: #5f6368;
-  //   --swiper-navigation-size: 1px; /* Icon-Größe */
-
-  //   /* Interaktion */
-  //   cursor: pointer;
-
-  //   /* Effekte */
-  //   transition: background-color 0.3s ease;
-
-  //   /* Sonstiges */
-  //   text-shadow: none;
-  // }
-
-  // .swiper-button-prev {
-  //   width: 28px;
-  //   left: 0px !important;
-  // }
-
-  // .swiper-button-next {
-  //   width: 28px;
-  //   right: 0px !important;
-  // }
-
   .swiper-button-next,
   .swiper-button-prev {
     /* Positionierung */
@@ -149,10 +91,3 @@
     right: 0px !important;
   }
 }
-
-// @media (width <= 768px) {
-//   .swiper-button-next,
-//   .swiper-button-prev {
-//     height: 12px !important;
-//     width: 12px !important;
-//   }
