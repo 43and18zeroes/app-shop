@@ -74,11 +74,14 @@
     justify-content: center;
 
     /* Typo/Icon (Swiper-Variablen) */
-    --swiper-navigation-color: #5f6368;
+    --swiper-navigation-color: light-dark(#40424B, #e3e2e6);
     --swiper-navigation-size: 1px;
 
     /* Interaktion */
     cursor: pointer;
+
+    /* Style */
+    background: light-dark(rgba(26, 27, 31, 0), rgba(26, 27, 31, 0.5));
   }
 
   .swiper-button-prev {
