@@ -52,10 +52,10 @@ export class App {
 
   sidenavWidth = computed(() => (this.collapsed() ? '81px' : '250px'));
   contentMarginLeft = computed(() => {
-    if (!this.isDesktop()) {
+    // if (!this.isDesktop()) {
       return '81px';
-    }
-    return this.collapsed() ? '81px' : '250px';
+    // }
+    // return this.collapsed() ? '81px' : '250px';
   });
 
   collapseSidenav() {
