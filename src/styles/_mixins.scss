@@ -1,6 +1,6 @@
+@use 'variables' as var;
+
 @mixin mat-theme-transition(
-  $duration: 500ms,
-  $easing: cubic-bezier(0.2, 0, 0, 1)
 ) {
-  transition: background-color $duration $easing, color $duration $easing;
+  transition: background-color var.$mat-duration var.$mat-easing, color var.$mat-duration var.$mat-easing;
 }

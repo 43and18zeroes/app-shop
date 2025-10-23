@@ -1,3 +1,5 @@
+@use '../../../styles/variables' as var;
+
 .swiper {
   overflow: hidden;
 
@@ -74,14 +76,15 @@
     justify-content: center;
 
     /* Typo/Icon (Swiper-Variablen) */
-    --swiper-navigation-color: light-dark(#40424B, #e3e2e6);
-    --swiper-navigation-size: 1px;
+    --swiper-navigation-color: light-dark(#5C5E69, #e3e2e6);
+    --swiper-navigation-size: 0px;
 
     /* Interaktion */
     cursor: pointer;
 
     /* Style */
-    background: light-dark(rgba(26, 27, 31, 0), rgba(26, 27, 31, 0.5));
+    background: light-dark(rgba(18, 19, 22, 0), rgba(18, 19, 22, 0.5));
+    transition: background var.$mat-duration var.$mat-easing;
   }
 
   .swiper-button-prev {
