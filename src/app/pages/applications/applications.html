@@ -7,15 +7,14 @@
   [ngClass]="{ 'swiper--mobile-padding': isMobileDevice }"
 >
   <div class="swiper-wrapper">
-    <div
-      class="swiper-slide"
-      *ngFor="let thumbnailData of section; trackBy: trackByUrl"
-    >
+    @for (thumbnailData of section; track thumbnailData.thumbnailUrl) {
+    <div class="swiper-slide">
       <img
         [src]="thumbnailData.thumbnailUrl"
         [alt]="thumbnailData.altText || 'Video Thumbnail'"
       />
     </div>
+    }
   </div>
   @if (!isMobileDevice) {
   <div class="swiper-button-prev"></div>
@@ -30,15 +29,14 @@
   [ngClass]="{ 'swiper--mobile-padding': isMobileDevice }"
 >
   <div class="swiper-wrapper">
-    <div
-      class="swiper-slide"
-      *ngFor="let thumbnailData of sectionReversed; trackBy: trackByUrl"
-    >
+    @for (thumbnailData of sectionReversed; track thumbnailData.thumbnailUrl) {
+    <div class="swiper-slide">
       <img
         [src]="thumbnailData.thumbnailUrl"
         [alt]="thumbnailData.altText || 'Video Thumbnail'"
       />
     </div>
+    }
   </div>
   @if (!isMobileDevice) {
   <div class="swiper-button-prev"></div>
