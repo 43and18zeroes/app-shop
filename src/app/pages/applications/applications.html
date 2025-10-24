@@ -10,6 +10,7 @@
     @for (thumbnailData of section; track thumbnailData.thumbnailUrl) {
     <div class="swiper-slide">
       <img
+        [class.no__highlight]="isMobileDevice"
         [src]="thumbnailData.thumbnailUrl"
         [alt]="thumbnailData.altText || 'Video Thumbnail'"
       />
@@ -32,6 +33,7 @@
     @for (thumbnailData of sectionReversed; track thumbnailData.thumbnailUrl) {
     <div class="swiper-slide">
       <img
+        [class.no__highlight]="isMobileDevice"
         [src]="thumbnailData.thumbnailUrl"
         [alt]="thumbnailData.altText || 'Video Thumbnail'"
       />
