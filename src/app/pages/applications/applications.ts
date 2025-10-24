@@ -64,10 +64,10 @@ export class Applications {
       };
 
       if (this.isMobileDevice) {
-        baseConfig.speed = 300;
+        baseConfig.speed = 200;
 
         baseConfig.breakpoints = {
-          320: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 10 },
+          320: { slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 10 },
           600: { slidesPerView: 5, slidesPerGroup: 4, spaceBetween: 10 },
           960: { slidesPerView: 8, slidesPerGroup: 6, spaceBetween: 10 },
           1440: { slidesPerView: 8, slidesPerGroup: 8, spaceBetween: 10 },
