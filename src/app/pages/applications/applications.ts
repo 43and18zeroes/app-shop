@@ -44,13 +44,13 @@ export class Applications {
         ) as HTMLElement;
       }
 
-      return {
+      const baseConfig: SwiperOptions = {
         modules: [Navigation],
         slidesPerView: 8,
         slidesPerGroup: 8,
         spaceBetween: 28,
         loop: false,
-        speed: 500,
+        speed: 500, // Desktop-Geschwindigkeit
         navigation: {
           nextEl: nextEl as HTMLElement,
           prevEl: prevEl as HTMLElement,
@@ -62,6 +62,19 @@ export class Applications {
           1440: { slidesPerView: 8, slidesPerGroup: 8, spaceBetween: 20 },
         },
       };
+
+      if (this.isMobileDevice) {
+        baseConfig.speed = 300;
+
+        baseConfig.breakpoints = {
+          320: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 10 },
+          600: { slidesPerView: 5, slidesPerGroup: 4, spaceBetween: 10 },
+          960: { slidesPerView: 8, slidesPerGroup: 6, spaceBetween: 10 },
+          1440: { slidesPerView: 8, slidesPerGroup: 8, spaceBetween: 10 },
+        };
+      }
+
+      return baseConfig;
     };
 
     [this.swiperContainer1, this.swiperContainer2].forEach((ref) => {
