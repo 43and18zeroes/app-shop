@@ -1,7 +1,11 @@
 <h1>App Shop</h1>
 
 <h2>Basic Apps</h2>
-<div class="swiper" #swiperContainer1>
+<div
+  class="swiper"
+  #swiperContainer1
+  [ngClass]="{ 'swiper--mobile-padding': isMobileDevice }"
+>
   <div class="swiper-wrapper">
     <div
       class="swiper-slide"
@@ -20,7 +24,11 @@
 </div>
 
 <h2>Complex Apps</h2>
-<div class="swiper" #swiperContainer2>
+<div
+  class="swiper"
+  #swiperContainer2
+  [ngClass]="{ 'swiper--mobile-padding': isMobileDevice }"
+>
   <div class="swiper-wrapper">
     <div
       class="swiper-slide"
