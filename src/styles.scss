@@ -47,15 +47,17 @@ h1 {
   margin-top: 4px;
 }
 
+h2 {
+  margin-top: 28px;
+}
+
 h1,
 h2 {
   font-weight: 500;
 }
 
 .no__highlight {
-  // Verhindert das blaue/graue Overlay beim Tippen auf iOS/Android
   -webkit-tap-highlight-color: transparent;
-  // Verhindert Text- oder Bildauswahl (wichtig für Touch-Gesten)
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
