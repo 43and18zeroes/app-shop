@@ -46,11 +46,8 @@ export class Applications {
 
       const baseConfig: SwiperOptions = {
         modules: [Navigation],
-        slidesPerView: 8,
-        slidesPerGroup: 8,
-        spaceBetween: 28,
         loop: false,
-        speed: 500, // Desktop-Geschwindigkeit
+        speed: 500,
         navigation: {
           nextEl: nextEl as HTMLElement,
           prevEl: prevEl as HTMLElement,
@@ -70,7 +67,6 @@ export class Applications {
           320: { slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 10 },
           600: { slidesPerView: 5, slidesPerGroup: 5, spaceBetween: 10 },
           960: { slidesPerView: 8, slidesPerGroup: 8, spaceBetween: 10 },
-          1440: { slidesPerView: 8, slidesPerGroup: 8, spaceBetween: 10 },
         };
       }
 
