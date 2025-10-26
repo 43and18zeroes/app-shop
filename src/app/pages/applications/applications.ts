@@ -4,7 +4,7 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import { NavigationOptions, SwiperOptions } from 'swiper/types';
-import { SECTION, SECTION_REVERSED, SectionItem } from './applications.data';
+import { DOUBLED_SECTION, SECTION_REVERSED, SectionItem } from './applications.data';
 import { DeviceService } from '../../services/device-service';
 
 @Component({
@@ -18,7 +18,7 @@ export class Applications {
   readonly isMobileDevice =
     this.deviceService.isAndroid || this.deviceService.isiPhone;
 
-  readonly section: SectionItem[] = SECTION;
+  readonly section: SectionItem[] = DOUBLED_SECTION;
   readonly sectionReversed: SectionItem[] = SECTION_REVERSED;
 
   @ViewChild('swiperContainer1') swiperContainer1!: ElementRef<HTMLElement>;
