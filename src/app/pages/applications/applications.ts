@@ -4,8 +4,14 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import { NavigationOptions, SwiperOptions } from 'swiper/types';
-import { DOUBLED_SECTION, SECTION_REVERSED, SectionItem } from './applications.data';
+import {
+  BASE_PATH,
+  DOUBLED_SECTION,
+  SECTION_REVERSED,
+  SectionItem,
+} from './applications.data';
 import { DeviceService } from '../../services/device-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-applications',
@@ -14,6 +20,7 @@ import { DeviceService } from '../../services/device-service';
   styleUrl: './applications.scss',
 })
 export class Applications {
+  private router = inject(Router);
   private deviceService = inject(DeviceService);
   readonly isMobileDevice =
     this.deviceService.isAndroid || this.deviceService.isiPhone;
@@ -28,6 +35,10 @@ export class Applications {
 
   trackByUrl(_i: number, item: SectionItem) {
     return item.thumbnailUrl;
+  }
+
+  openDetails(item: SectionItem) {
+    this.router.navigate(['/', BASE_PATH, item.id], { state: item });
   }
 
   ngAfterViewInit(): void {
