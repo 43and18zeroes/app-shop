@@ -1,10 +1,8 @@
 <!-- product-details -->
-<section *ngIf="item(); else notFound">
-  <h1>Details: {{ item()!.id }}</h1>
-  <img [src]="item()!.thumbnailUrl" [alt]="item()!.altText || item()!.id" />
-  <p>Alt: {{ item()!.altText }}</p>
-</section>
-
-<ng-template #notFound>
-  <p>Kein Eintrag gefunden (ID: {{ id() }})</p>
-</ng-template>
+@if (item()) {
+<h1>Details: {{ item()!.id }}</h1>
+<img [src]="item()!.thumbnailUrl" [alt]="item()!.altText || item()!.id" />
+<p>Alt: {{ item()!.altText }}</p>
+} @else {
+<p>Kein Eintrag gefunden (ID: {{ id() }})</p>
+}
