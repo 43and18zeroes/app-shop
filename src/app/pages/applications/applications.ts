@@ -35,10 +35,6 @@ export class Applications {
 
   private swiperInstances: Swiper[] = [];
 
-  trackByUrl(_i: number, item: SectionItem) {
-    return item.logoFilename;
-  }
-
   openDetails(item: SectionItem) {
     this.router.navigate(['/', BASE_PATH, item.id], { state: item });
   }
