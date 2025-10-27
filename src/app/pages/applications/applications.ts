@@ -36,7 +36,7 @@ export class Applications {
   private swiperInstances: Swiper[] = [];
 
   trackByUrl(_i: number, item: SectionItem) {
-    return item.logoUrl;
+    return item.logoFilename;
   }
 
   openDetails(item: SectionItem) {

@@ -2,7 +2,7 @@ export interface SectionItem {
   id: string;
   productName: string;
   productDescription: string;
-  logoUrl: string;
+  logoFilename: string;
   logoAltText: string;
 }
 
@@ -15,7 +15,7 @@ export const SECTION: SectionItem[] = [
     productName: 'Chat App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoUrl: 'thumbnail-rnd-chat.webp',
+    logoFilename: 'thumbnail-rnd-chat.webp',
     logoAltText: 'Chat App',
   },
   {
@@ -23,7 +23,7 @@ export const SECTION: SectionItem[] = [
     productName: 'Maps App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoUrl: 'thumbnail-rnd-maps.webp',
+    logoFilename: 'thumbnail-rnd-maps.webp',
     logoAltText: 'Maps App',
   },
   {
@@ -31,7 +31,7 @@ export const SECTION: SectionItem[] = [
     productName: 'Music App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoUrl: 'thumbnail-rnd-music.webp',
+    logoFilename: 'thumbnail-rnd-music.webp',
     logoAltText: 'Music App',
   },
   {
@@ -39,7 +39,7 @@ export const SECTION: SectionItem[] = [
     productName: 'Fitness App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoUrl: 'thumbnail-rnd-heart.webp',
+    logoFilename: 'thumbnail-rnd-heart.webp',
     logoAltText: 'Fitness App',
   },
   {
@@ -47,7 +47,7 @@ export const SECTION: SectionItem[] = [
     productName: 'Gaming App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoUrl: 'thumbnail-rnd-pad.webp',
+    logoFilename: 'thumbnail-rnd-pad.webp',
     logoAltText: 'Gaming App',
   },
   {
@@ -55,7 +55,7 @@ export const SECTION: SectionItem[] = [
     productName: 'Settings',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoUrl: 'thumbnail-rnd-settings.webp',
+    logoFilename: 'thumbnail-rnd-settings.webp',
     logoAltText: 'Settings',
   },
   {
@@ -63,7 +63,7 @@ export const SECTION: SectionItem[] = [
     productName: 'Weather App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoUrl: 'thumbnail-rnd-weather.webp',
+    logoFilename: 'thumbnail-rnd-weather.webp',
     logoAltText: 'Weather App',
   },
   {
@@ -71,7 +71,7 @@ export const SECTION: SectionItem[] = [
     productName: 'Camera',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoUrl: 'thumbnail-rnd-cam.webp',
+    logoFilename: 'thumbnail-rnd-cam.webp',
     logoAltText: 'Camera',
   },
 ];

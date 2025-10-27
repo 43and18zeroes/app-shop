@@ -12,7 +12,7 @@
     <div class="swiper-slide">
       <img
         [class.no__highlight]="isMobileDevice"
-        [src]="logoPath + '/' + thumbnailData.logoUrl"
+        [src]="logoPath + '/' + thumbnailData.logoFilename"
         [alt]="thumbnailData.logoAltText || 'Video Thumbnail'"
         (click)="openDetails(thumbnailData)"
       />
@@ -36,7 +36,7 @@
     <div class="swiper-slide">
       <img
         [class.no__highlight]="isMobileDevice"
-        [src]="logoPath + '/' + thumbnailData.logoUrl"
+        [src]="logoPath + '/' + thumbnailData.logoFilename"
         [alt]="thumbnailData.logoAltText || 'Video Thumbnail'"
         (click)="openDetails(thumbnailData)"
       />
