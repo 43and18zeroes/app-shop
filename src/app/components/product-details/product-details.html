@@ -1,8 +1,8 @@
 <!-- product-details -->
 @if (item()) {
 <h1>Details: {{ item()!.id }}</h1>
-<img [src]="item()!.thumbnailUrl" [alt]="item()!.thumbnailAltText || item()!.id" />
-<p>Alt: {{ item()!.thumbnailAltText }}</p>
+<img [src]="item()!.logoUrl" [alt]="item()!.logoAltText || item()!.id" />
+<p>Alt: {{ item()!.logoAltText }}</p>
 } @else {
 <p>Kein Eintrag gefunden (ID: {{ id() }})</p>
 }

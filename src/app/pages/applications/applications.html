@@ -8,12 +8,12 @@
   [ngClass]="{ 'swiper--mobile-padding': isMobileDevice }"
 >
   <div class="swiper-wrapper">
-    @for (thumbnailData of section; track thumbnailData.thumbnailUrl) {
+    @for (thumbnailData of section; track thumbnailData.logoUrl) {
     <div class="swiper-slide">
       <img
         [class.no__highlight]="isMobileDevice"
-        [src]="thumbnailData.thumbnailUrl"
-        [alt]="thumbnailData.altText || 'Video Thumbnail'"
+        [src]="LOGO_PATH + '/' + thumbnailData.logoUrl"
+        [alt]="thumbnailData.logoAltText || 'Video Thumbnail'"
         (click)="openDetails(thumbnailData)"
       />
     </div>
@@ -32,12 +32,12 @@
   [ngClass]="{ 'swiper--mobile-padding': isMobileDevice }"
 >
   <div class="swiper-wrapper">
-    @for (thumbnailData of sectionReversed; track thumbnailData.thumbnailUrl) {
+    @for (thumbnailData of sectionReversed; track thumbnailData.logoUrl) {
     <div class="swiper-slide">
       <img
         [class.no__highlight]="isMobileDevice"
-        [src]="thumbnailData.thumbnailUrl"
-        [alt]="thumbnailData.altText || 'Video Thumbnail'"
+        [src]="LOGO_PATH + '/' + thumbnailData.logoUrl"
+        [alt]="thumbnailData.logoAltText || 'Video Thumbnail'"
         (click)="openDetails(thumbnailData)"
       />
     </div>

@@ -9,6 +9,7 @@ import {
   DOUBLED_SECTION,
   SECTION_REVERSED,
   SectionItem,
+  LOGO_PATH as DATA_LOGO_PATH,
 } from './applications.data';
 import { DeviceService } from '../../services/device-service';
 import { Router } from '@angular/router';
@@ -25,6 +26,7 @@ export class Applications {
   readonly isMobileDevice =
     this.deviceService.isAndroid || this.deviceService.isiPhone;
 
+  readonly LOGO_PATH = DATA_LOGO_PATH;
   readonly section: SectionItem[] = DOUBLED_SECTION;
   readonly sectionReversed: SectionItem[] = SECTION_REVERSED;
 
@@ -34,7 +36,7 @@ export class Applications {
   private swiperInstances: Swiper[] = [];
 
   trackByUrl(_i: number, item: SectionItem) {
-    return item.thumbnailUrl;
+    return item.logoUrl;
   }
 
   openDetails(item: SectionItem) {
