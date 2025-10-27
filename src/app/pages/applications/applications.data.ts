@@ -1,59 +1,83 @@
 export interface SectionItem {
   id: string;
+  productName: string;
+  productDescription: string;
   thumbnailUrl: string;
-  altText: string;
+  thumbnailAltText: string;
 }
 
 export const BASE_PATH = 'app-details';
 
 export const SECTION: SectionItem[] = [
   {
-    id: 'card-grid',
-    thumbnailUrl: 'img/thumbnails/thumbnail-card-grid-app.webp',
-    altText: 'Thumbnail 1',
-  },
-  {
     id: 'chat',
+    productName: 'Chat App',
+    productDescription:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
     thumbnailUrl: 'img/thumbnails/thumbnail-rnd-chat.webp',
-    altText: 'Thumbnail 2',
+    thumbnailAltText: 'Chat App',
   },
   {
     id: 'maps',
+    productName: 'Maps App',
+    productDescription:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
     thumbnailUrl: 'img/thumbnails/thumbnail-rnd-maps.webp',
-    altText: 'Thumbnail 3',
+    thumbnailAltText: 'Maps App',
   },
   {
     id: 'music',
+    productName: 'Music App',
+    productDescription:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
     thumbnailUrl: 'img/thumbnails/thumbnail-rnd-music.webp',
-    altText: 'Thumbnail 4',
+    thumbnailAltText: 'Music App',
   },
   {
     id: 'heart',
+    productName: 'Fitness App',
+    productDescription:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
     thumbnailUrl: 'img/thumbnails/thumbnail-rnd-heart.webp',
-    altText: 'Thumbnail 5',
+    thumbnailAltText: 'Fitness App',
   },
   {
     id: 'pad',
+    productName: 'Gaming App',
+    productDescription:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
     thumbnailUrl: 'img/thumbnails/thumbnail-rnd-pad.webp',
-    altText: 'Thumbnail 6',
+    thumbnailAltText: 'Gaming App',
   },
   {
     id: 'settings',
+    productName: 'Settings',
+    productDescription:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
     thumbnailUrl: 'img/thumbnails/thumbnail-rnd-settings.webp',
-    altText: 'Thumbnail 7',
+    thumbnailAltText: 'Settings',
   },
   {
     id: 'weather',
+    productName: 'Weather App',
+    productDescription:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
     thumbnailUrl: 'img/thumbnails/thumbnail-rnd-weather.webp',
-    altText: 'Thumbnail 8',
+    thumbnailAltText: 'Weather App',
   },
   {
     id: 'cam',
+    productName: 'Camera',
+    productDescription:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
     thumbnailUrl: 'img/thumbnails/thumbnail-rnd-cam.webp',
-    altText: 'Thumbnail 9',
+    thumbnailAltText: 'Camera',
   },
 ];
 
 export const DOUBLED_SECTION: SectionItem[] = [...SECTION, ...SECTION];
 
-export const SECTION_REVERSED: SectionItem[] = [...SECTION, ...SECTION].reverse();
+export const SECTION_REVERSED: SectionItem[] = [
+  ...SECTION,
+  ...SECTION,
+].reverse();
