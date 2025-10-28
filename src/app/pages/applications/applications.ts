@@ -9,7 +9,6 @@ import {
   DOUBLED_SECTION,
   SECTION_REVERSED,
   SectionItem,
-  // LOGO_PATH as DATA_LOGO_PATH,
 } from './applications.data';
 import { DeviceService } from '../../services/device-service';
 import { Router } from '@angular/router';
@@ -37,12 +36,7 @@ export class Applications {
   private swiperInstances: Swiper[] = [];
 
   openDetails(item: SectionItem) {
-    this.router.navigate(['/', BASE_PATH, item.id], {
-      state: {
-        ...item,
-        logoPath: this.productPath,
-      },
-    });
+    this.router.navigate(['/', BASE_PATH, item.id], { state: item });
   }
 
   ngAfterViewInit(): void {

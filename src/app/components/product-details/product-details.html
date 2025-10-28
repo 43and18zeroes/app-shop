@@ -2,7 +2,7 @@
 @if (item()) {
 <h1>{{ item()!.productName }}</h1>
 <img
-  [src]="(logoPath) + '/' + item()!.logoFilename"
+  [src]="'img/' + logoBasePath + '/logos/' + item()!.logoFilename"
   [alt]="item()!.logoAltText || item()!.id"
 />
 <p>Alt: {{ item()!.logoAltText }}</p>
