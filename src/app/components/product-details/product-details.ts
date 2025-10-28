@@ -1,6 +1,9 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SECTION, SectionItem } from '../../pages/applications/applications.data';
+import {
+  SECTION,
+  SectionItem,
+} from '../../pages/applications/applications.data';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -17,7 +20,9 @@ export class ProductDetails {
   readonly id = signal<string>(this.route.snapshot.paramMap.get('id') ?? '');
 
   private readonly navState = this.router.getCurrentNavigation()?.extras
-    .state as SectionItem | undefined;
+    .state as (SectionItem & { logoPath?: string }) | undefined;
+
+  readonly logoPath = this.navState?.logoPath;
 
   readonly item = computed<SectionItem | undefined>(() => {
     if (this.navState && this.navState.id === this.id()) return this.navState;

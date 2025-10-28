@@ -6,7 +6,7 @@ export interface SectionItem {
   logoAltText: string;
 }
 
-export const BASE_PATH = 'app-details';
+export const BASE_PATH = 'applications';
 export const LOGO_PATH = 'img/applications/logos'
 
 export const SECTION: SectionItem[] = [

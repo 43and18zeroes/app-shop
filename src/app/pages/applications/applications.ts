@@ -36,7 +36,12 @@ export class Applications {
   private swiperInstances: Swiper[] = [];
 
   openDetails(item: SectionItem) {
-    this.router.navigate(['/', BASE_PATH, item.id], { state: item });
+    this.router.navigate(['/', BASE_PATH, item.id], {
+      state: {
+        ...item,
+        logoPath: this.logoPath,
+      },
+    });
   }
 
   ngAfterViewInit(): void {
