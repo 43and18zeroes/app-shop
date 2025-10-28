@@ -9,7 +9,7 @@ import {
   DOUBLED_SECTION,
   SECTION_REVERSED,
   SectionItem,
-  LOGO_PATH as DATA_LOGO_PATH,
+  // LOGO_PATH as DATA_LOGO_PATH,
 } from './applications.data';
 import { DeviceService } from '../../services/device-service';
 import { Router } from '@angular/router';
@@ -26,7 +26,8 @@ export class Applications {
   readonly isMobileDevice =
     this.deviceService.isAndroid || this.deviceService.isiPhone;
 
-  readonly logoPath = DATA_LOGO_PATH;
+  // readonly logoPath = DATA_LOGO_PATH;
+  readonly productPath = BASE_PATH;
   readonly section: SectionItem[] = DOUBLED_SECTION;
   readonly sectionReversed: SectionItem[] = SECTION_REVERSED;
 
@@ -39,7 +40,7 @@ export class Applications {
     this.router.navigate(['/', BASE_PATH, item.id], {
       state: {
         ...item,
-        logoPath: this.logoPath,
+        logoPath: this.productPath,
       },
     });
   }

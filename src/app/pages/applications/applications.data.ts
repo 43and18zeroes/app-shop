@@ -7,7 +7,7 @@ export interface SectionItem {
 }
 
 export const BASE_PATH = 'applications';
-export const LOGO_PATH = 'img/applications/logos'
+// export const LOGO_PATH = 'img/applications/logos'
 
 export const SECTION: SectionItem[] = [
   {
