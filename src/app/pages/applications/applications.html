@@ -32,7 +32,7 @@
   [ngClass]="{ 'swiper--mobile-padding': isMobileDevice }"
 >
   <div class="swiper-wrapper">
-    @for (thumbnailData of section; track thumbnailData.id + '_' + $index) {
+    @for (thumbnailData of sectionReversed; track thumbnailData.id + '_' + $index) {
     <div class="swiper-slide">
       <img
         [class.no__highlight]="isMobileDevice"
