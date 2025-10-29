@@ -3,14 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {
   SECTION,
   SectionItem,
-  BASE_PATH as DEFAULT_LOGO_PATH,
 } from '../../pages/applications/applications.data';
 import { CommonModule } from '@angular/common';
-
-const LOGO_PATH_BY_FEATURE: Record<string, string> = {
-  'app-details': 'img/applications/logos',
-  'game-details': 'img/games/logos',
-};
 
 @Component({
   selector: 'app-product-details',
@@ -25,14 +19,11 @@ export class ProductDetails {
 
   readonly id = signal<string>(this.route.snapshot.paramMap.get('id') ?? '');
 
-  private readonly feature = (() => {
+  readonly logoBasePath = (() => {
     const path = this.router.url.split('?')[0];
     const segments = path.split('/').filter(Boolean);
     return segments[0] ?? '';
   })();
-
-  readonly logoBasePath =
-    LOGO_PATH_BY_FEATURE[this.feature] ?? DEFAULT_LOGO_PATH;
 
   private readonly navState = this.router.getCurrentNavigation()?.extras
     .state as SectionItem | undefined;
