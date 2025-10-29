@@ -15,6 +15,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-applications',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './applications.html',
   styleUrl: './applications.scss',
