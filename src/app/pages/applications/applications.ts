@@ -25,7 +25,6 @@ export class Applications {
   readonly isMobileDevice =
     this.deviceService.isAndroid || this.deviceService.isiPhone;
 
-  // readonly logoPath = DATA_LOGO_PATH;
   readonly productPath = BASE_PATH;
   readonly section: SectionItem[] = DOUBLED_SECTION;
   readonly sectionReversed: SectionItem[] = SECTION_REVERSED;

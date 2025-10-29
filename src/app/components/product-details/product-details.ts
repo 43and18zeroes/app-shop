@@ -10,7 +10,6 @@ import { CommonModule } from '@angular/common';
 const LOGO_PATH_BY_FEATURE: Record<string, string> = {
   'app-details': 'img/applications/logos',
   'game-details': 'img/games/logos',
-  // ggf. weitere
 };
 
 @Component({
