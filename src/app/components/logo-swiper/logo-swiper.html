@@ -2,7 +2,7 @@
 <div
   class="swiper"
   #swiperContainer
-  [ngClass]="{ 'swiper--mobile-padding': isMobileDevice }"
+  [class.swiper--mobile-padding]="isMobileDevice"
 >
   <div class="swiper-wrapper">
     @for (thumbnailData of items; track thumbnailData.id + '_' + $index) {
