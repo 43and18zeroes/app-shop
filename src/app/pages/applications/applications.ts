@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import {
-  BASE_PATH,
+  PRODUCT_PATH,
   DOUBLED_SECTION,
   SECTION_REVERSED,
   SectionItem,
@@ -19,11 +19,11 @@ import { LogoSwiper } from '../../components/logo-swiper/logo-swiper';
 export class Applications {
   private router = inject(Router);
 
-  readonly productPath = BASE_PATH;
+  readonly productPath = PRODUCT_PATH;
   readonly section: SectionItem[] = DOUBLED_SECTION;
   readonly sectionReversed: SectionItem[] = SECTION_REVERSED;
 
   openDetails(item: SectionItem) {
-    this.router.navigate(['/', BASE_PATH, item.id], { state: item });
+    this.router.navigate(['/', PRODUCT_PATH, item.productId], { state: item });
   }
 }

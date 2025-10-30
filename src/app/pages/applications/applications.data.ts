@@ -1,77 +1,77 @@
 export interface SectionItem {
-  id: string;
+  productId: string;
   productName: string;
   productDescription: string;
-  logoFilename: string;
-  logoAltText: string;
+  productLogoFilename: string;
+  productLogoAltText: string;
 }
 
-export const BASE_PATH = 'applications';
+export const PRODUCT_PATH = 'applications';
 
 export const SECTION: SectionItem[] = [
   {
-    id: 'chat',
+    productId: 'chat',
     productName: 'Chat App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoFilename: 'logo-rnd-chat.webp',
-    logoAltText: 'Chat App',
+    productLogoFilename: 'logo-rnd-chat.webp',
+    productLogoAltText: 'Chat App',
   },
   {
-    id: 'maps',
+    productId: 'maps',
     productName: 'Maps App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoFilename: 'logo-rnd-maps.webp',
-    logoAltText: 'Maps App',
+    productLogoFilename: 'logo-rnd-maps.webp',
+    productLogoAltText: 'Maps App',
   },
   {
-    id: 'music',
+    productId: 'music',
     productName: 'Music App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoFilename: 'logo-rnd-music.webp',
-    logoAltText: 'Music App',
+    productLogoFilename: 'logo-rnd-music.webp',
+    productLogoAltText: 'Music App',
   },
   {
-    id: 'heart',
+    productId: 'heart',
     productName: 'Fitness App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoFilename: 'logo-rnd-heart.webp',
-    logoAltText: 'Fitness App',
+    productLogoFilename: 'logo-rnd-heart.webp',
+    productLogoAltText: 'Fitness App',
   },
   {
-    id: 'pad',
+    productId: 'pad',
     productName: 'Gaming App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoFilename: 'logo-rnd-pad.webp',
-    logoAltText: 'Gaming App',
+    productLogoFilename: 'logo-rnd-pad.webp',
+    productLogoAltText: 'Gaming App',
   },
   {
-    id: 'settings',
+    productId: 'settings',
     productName: 'Settings',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoFilename: 'logo-rnd-settings.webp',
-    logoAltText: 'Settings',
+    productLogoFilename: 'logo-rnd-settings.webp',
+    productLogoAltText: 'Settings',
   },
   {
-    id: 'weather',
+    productId: 'weather',
     productName: 'Weather App',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoFilename: 'logo-rnd-weather.webp',
-    logoAltText: 'Weather App',
+    productLogoFilename: 'logo-rnd-weather.webp',
+    productLogoAltText: 'Weather App',
   },
   {
-    id: 'cam',
+    productId: 'cam',
     productName: 'Camera',
     productDescription:
       'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-    logoFilename: 'logo-rnd-cam.webp',
-    logoAltText: 'Camera',
+    productLogoFilename: 'logo-rnd-cam.webp',
+    productLogoAltText: 'Camera',
   },
 ];
 

@@ -5,12 +5,12 @@
   [class.swiper--mobile-padding]="isMobileDevice"
 >
   <div class="swiper-wrapper">
-    @for (thumbnailData of items; track thumbnailData.id + '_' + $index) {
+    @for (thumbnailData of items; track thumbnailData.productId + '_' + $index) {
     <div class="swiper-slide">
       <img
         [class.no__highlight]="isMobileDevice"
-        [src]="'img/' + productPath + '/logos/' + thumbnailData.logoFilename"
-        [alt]="thumbnailData.logoAltText || 'Logo'"
+        [src]="'img/' + productPath + '/logos/' + thumbnailData.productLogoFilename"
+        [alt]="thumbnailData.productLogoAltText || 'Logo'"
         (click)="onClick(thumbnailData)"
       />
     </div>
