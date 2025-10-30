@@ -2,10 +2,10 @@
 @if (item()) {
 <h1>{{ item()!.productName }}</h1>
 <img
-  [src]="'img/' + logoBasePath + '/logos/' + item()!.logoFilename"
-  [alt]="item()!.logoAltText || item()!.id"
+  [src]="'img/' + productBasePath + '/logos/' + item()!.productLogoFilename"
+  [alt]="item()!.productLogoAltText || item()!.productId"
 />
-<p>Alt: {{ item()!.logoAltText }}</p>
+<p>Alt: {{ item()!.productLogoAltText }}</p>
 } @else {
-<p>Kein Eintrag gefunden (ID: {{ id() }})</p>
+<p>Kein Eintrag gefunden (ID: {{ productId() }})</p>
 }

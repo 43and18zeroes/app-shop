@@ -17,9 +17,9 @@ export class ProductDetails {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
 
-  readonly id = signal<string>(this.route.snapshot.paramMap.get('id') ?? '');
+  readonly productId = signal<string>(this.route.snapshot.paramMap.get('productId') ?? '');
 
-  readonly logoBasePath = (() => {
+  readonly productBasePath = (() => {
     const path = this.router.url.split('?')[0];
     const segments = path.split('/').filter(Boolean);
     return segments[0] ?? '';
@@ -29,7 +29,7 @@ export class ProductDetails {
     .state as SectionItem | undefined;
 
   readonly item = computed<SectionItem | undefined>(() => {
-    if (this.navState && this.navState.id === this.id()) return this.navState;
-    return SECTION.find((s) => s.id === this.id());
+    if (this.navState && this.navState.productId === this.productId()) return this.navState;
+    return SECTION.find((s) => s.productId === this.productId());
   });
 }
