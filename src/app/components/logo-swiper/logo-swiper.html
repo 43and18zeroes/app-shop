@@ -1,1 +1,24 @@
-<p>logo-swiper works!</p>
+<!-- logo-swiper.html -->
+<div
+  class="swiper"
+  #swiperContainer
+  [ngClass]="{ 'swiper--mobile-padding': isMobileDevice }"
+>
+  <div class="swiper-wrapper">
+    @for (thumbnailData of items; track thumbnailData.id + '_' + $index) {
+      <div class="swiper-slide">
+        <img
+          [class.no__highlight]="isMobileDevice"
+          [src]="'img/' + productPath + '/logos/' + thumbnailData.logoFilename"
+          [alt]="thumbnailData.logoAltText || 'Logo'"
+          (click)="onClick(thumbnailData)"
+        />
+      </div>
+    }
+  </div>
+
+  @if (!isMobileDevice) {
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  }
+</div>
