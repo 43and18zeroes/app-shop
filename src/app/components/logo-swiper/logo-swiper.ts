@@ -1,4 +1,13 @@
-import { Component, ElementRef, EventEmitter, inject, Input, Output, SimpleChanges, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  inject,
+  Input,
+  Output,
+  SimpleChanges,
+  ViewChild,
+} from '@angular/core';
 import { DeviceService } from '../../services/device-service';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
@@ -12,8 +21,9 @@ import { CommonModule } from '@angular/common';
   templateUrl: './logo-swiper.html',
   styleUrl: './logo-swiper.scss',
 })
-export class LogoSwiper<T extends { id: string | number; logoFilename: string; logoAltText?: string }>
-{
+export class LogoSwiper<
+  T extends { id: string | number; logoFilename: string; logoAltText?: string }
+> {
   private deviceService = inject(DeviceService);
 
   @Input({ required: true }) items: T[] = [];

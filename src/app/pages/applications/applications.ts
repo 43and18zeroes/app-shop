@@ -7,7 +7,7 @@ import {
   SectionItem,
 } from './applications.data';
 import { Router } from '@angular/router';
-import { LogoSwiper } from "../../components/logo-swiper/logo-swiper";
+import { LogoSwiper } from '../../components/logo-swiper/logo-swiper';
 
 @Component({
   selector: 'app-applications',
@@ -16,7 +16,6 @@ import { LogoSwiper } from "../../components/logo-swiper/logo-swiper";
   templateUrl: './applications.html',
   styleUrl: './applications.scss',
 })
-
 export class Applications {
   private router = inject(Router);
 
