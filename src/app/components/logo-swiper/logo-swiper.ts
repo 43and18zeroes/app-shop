@@ -1,6 +1,5 @@
 import { Component, ElementRef, EventEmitter, inject, Input, Output, SimpleChanges, ViewChild } from '@angular/core';
 import { DeviceService } from '../../services/device-service';
-// import { NavigationOptions, Swiper, SwiperOptions } from 'swiper/types';
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
@@ -17,17 +16,11 @@ export class LogoSwiper<T extends { id: string | number; logoFilename: string; l
 {
   private deviceService = inject(DeviceService);
 
-  /** Bilder-Items für die Slides */
   @Input({ required: true }) items: T[] = [];
-
-  /** Basis-Pfad zu /img/<productPath>/logos/...  */
   @Input({ required: true }) productPath!: string;
-
-  /** Optional: Geschwindigkeit überschreiben (Desktop/Mobile) */
   @Input() speedDesktop = 500;
   @Input() speedMobile = 200;
 
-  /** Optional: Breakpoints überschreiben (Desktop/Mobile) */
   @Input() desktopBreakpoints: SwiperOptions['breakpoints'] = {
     320: { slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 20 },
     600: { slidesPerView: 4, slidesPerGroup: 4, spaceBetween: 20 },
@@ -40,10 +33,8 @@ export class LogoSwiper<T extends { id: string | number; logoFilename: string; l
     960: { slidesPerView: 8, slidesPerGroup: 8, spaceBetween: 10 },
   };
 
-  /** Klick-Event eines Items */
   @Output() select = new EventEmitter<T>();
 
-  /** Klassensteuerung wie bisher */
   get isMobileDevice() {
     return this.deviceService.isAndroid || this.deviceService.isiPhone;
   }
@@ -57,7 +48,6 @@ export class LogoSwiper<T extends { id: string | number; logoFilename: string; l
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['items'] && this.swiper) {
-      // Slides-Liste könnte sich ändern
       queueMicrotask(() => this.swiper?.update());
     }
   }
