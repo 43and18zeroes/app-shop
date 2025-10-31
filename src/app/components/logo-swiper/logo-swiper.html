@@ -5,15 +5,23 @@
   [class.swiper--mobile-padding]="isMobileDevice"
 >
   <div class="swiper-wrapper">
-    @for (thumbnailData of items; track thumbnailData.productId + '_' + $index) {
-    <div class="swiper-slide">
+    @for (thumbnailData of items; track thumbnailData.productId + '_' + $index)
+    {
+    <a
+      class="swiper-slide"
+      (click)="onClick(thumbnailData)"
+      [attr.aria-label]="thumbnailData.productLogoAltText || 'Produkt öffnen'"
+      (click)="$event.stopPropagation()"
+    >
       <img
-        [class.no__highlight]="isMobileDevice"
-        [src]="'img/' + productPath + '/logos/' + thumbnailData.productLogoFilename"
+        [src]="
+          'img/' + productPath + '/logos/' + thumbnailData.productLogoFilename
+        "
         [alt]="thumbnailData.productLogoAltText || 'Logo'"
-        (click)="onClick(thumbnailData)"
+        loading="lazy"
+        decoding="async"
       />
-    </div>
+    </a>
     }
   </div>
 
