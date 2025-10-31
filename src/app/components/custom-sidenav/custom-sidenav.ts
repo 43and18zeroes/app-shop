@@ -37,9 +37,14 @@ export class CustomSidenav {
       route: '/info',
     },
     {
-      icon: 'balance',
+      icon: 'article',
       label: 'Imprint',
       route: '/imprint',
+    },
+    {
+      icon: 'lock',
+      label: 'Privacy Policy',
+      route: '/privacy-policy',
     },
   ]);
 }
