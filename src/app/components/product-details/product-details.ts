@@ -5,11 +5,12 @@ import {
   SectionItem,
 } from '../../pages/applications/applications.data';
 import { CommonModule } from '@angular/common';
+import { PreviewSwiper } from "../preview-swiper/preview-swiper";
 
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, PreviewSwiper],
   templateUrl: './product-details.html',
   styleUrl: './product-details.scss',
 })

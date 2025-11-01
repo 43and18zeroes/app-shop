@@ -1,10 +1,13 @@
 <!-- product-details -->
 @if (item()) {
-<h1>{{ item()!.productName }}</h1>
-<img
-  [src]="'img/' + productBasePath + '/logos/' + item()!.productLogoFilename"
-  [alt]="item()!.productLogoAltText || item()!.productId"
-/>
+<header>
+  <h1>{{ item()!.productName }}</h1>
+  <img
+    [src]="'img/' + productBasePath + '/logos/' + item()!.productLogoFilename"
+    [alt]="item()!.productLogoAltText || item()!.productId"
+  />
+</header>
+<app-preview-swiper></app-preview-swiper>
 } @else {
 <p>No entry found (ID: {{ productId() }})</p>
 }
