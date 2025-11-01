@@ -13,6 +13,14 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/info/info').then((m) => m.Info),
   },
   {
+    path: 'privacy-policy',
+    loadComponent: () => import('./pages/privacy-policy/privacy-policy').then((m) => m.PrivacyPolicy),
+  },
+  {
+    path: 'imprint',
+    loadComponent: () => import('./pages/imprint/imprint').then((m) => m.Imprint),
+  },
+  {
     path: 'start',
     pathMatch: 'full',
     redirectTo: '',
