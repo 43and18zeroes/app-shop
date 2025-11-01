@@ -16,12 +16,6 @@ mat-toolbar {
         in srgb,
         light-dark(#000, #fff) 10%,
         light-dark(#faf9fd, #121316)
-      ),
-    0 16px 32px
-      color-mix(
-        in srgb,
-        light-dark(#000, #fff) 6%,
-        light-dark(#faf9fd, #121316)
       );
   position: relative;
   z-index: 1000;
