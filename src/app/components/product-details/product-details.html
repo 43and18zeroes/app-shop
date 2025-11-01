@@ -5,7 +5,6 @@
   [src]="'img/' + productBasePath + '/logos/' + item()!.productLogoFilename"
   [alt]="item()!.productLogoAltText || item()!.productId"
 />
-<p>Alt: {{ item()!.productLogoAltText }}</p>
 } @else {
 <p>No entry found (ID: {{ productId() }})</p>
 }
